@@ -1,0 +1,50 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 2em;
+}
+
+h1 {
+  font-style: italic;
+  color: #373fff;
+}
+
+li {
+  background: #f2f2f2;
+  margin: 10px;
+  width: 40px;
+  /* display:none;  */
+
+  /* display:block; */
+
+  /*  display:inline */
+
+  /*  display:inline-block */
+}
+img {
+  width: 320px;
+  height: 200px;
+  margin: 5px;
+
+  /* experiment below */
+  
+  
+}
+.pic-frame {
+  box-shadow: 5px 10px 18px #888888; /* box-shadow gives it some emphasis, look it up!*/
+  display: inline-block; /* Try with inline only or block. What happens? */
+  background: #f2f2f2;
+  padding: 10px;
+  margin: 10px;
+
+  /*experiment below */
+  
+  
+}
+
+.caption {
+  margin-right: 10px;
+  width: 320px; /* try changing or removing the width */
+  dispaly: inline-block; /*inline-block lets us set a width */
+}

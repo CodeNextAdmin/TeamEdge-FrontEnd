@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Hello!</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <h1>
+      Thanks for sending us your private information!
+    </h1>
+
+    <p id="confirmation">
+      Confirmation Statment
+    </p>
+
+    <script>
+      window.onload = function() {
+        let color = localStorage.getItem("favColor");
+        let pet = localStorage.getItem("petName");
+        let pizza = localStorage.getItem("pizza")
+        let statement = `Your favorite color is ${color} 
+                          and your pet is ${pet}
+                           and your favorite pizza is ${pizza}`
+        
+        document.querySelector('#confirmation').innerHTML = statement
+        
+      };
+    </script>
+  </body>
+</html>

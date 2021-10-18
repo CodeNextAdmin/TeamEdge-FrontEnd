@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Hello!</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <h1>
+        API Playground
+      </h1>
+      <hr />
+      <div class="container">
+        <h4>
+          Rick and Morty
+        </h4>
+
+        <button onclick="getrickandmorty()">
+          get data
+        </button>
+
+        <div id="rickandmorty-data" class="data-output"></div>
+      </div>
+      <div class="container">
+        <h4>
+          Song Lyrics
+        </h4>
+        <input id="artist" placeholder="Artist" />
+        <input id="song" placeholder="Song" />
+        <button onclick="getLyrics()">
+          Get Lyrics
+        </button>
+        <br />
+        <div id="song-lyrics" class="data-output"></div>
+      </div>
+
+      <div class="container">
+        <h4>
+          Find a movie
+        </h4>
+        <p>
+          get an OMDB
+          <a href="http://www.omdbapi.com/apikey.aspx">api key</a> and enter it
+          in script.js
+        </p>
+        <input id="movie" placeholder="movie" />
+        <input id="year" placeholder="year" />
+        <button onclick="getMovie()">
+          Get Movie
+        </button>
+        <br />
+        <div id="movie-output" class="data-output"></div>
+      </div>
+
+      <div class="container">
+        <h4>
+          Find a Recipe
+        </h4>
+        <p>
+          get an Edamam <a href="https://developer.edamam.com/">api key</a> and
+          enter it in script.js
+        </p>
+        <input id="recipe-query" placeholder="ex. chicken, pho, mofongo" />
+   
+        <button onclick="getRecipe()">
+          Get a Recipe
+        </button>
+        <br />
+        <div id="recipe-output" class="data-output"></div>
+      </div>
+    </main>
+
+    <p style="color:white">
+      Find more public APIs here:
+      <a href="https://github.com/public-apis/public-apis">
+        Github public-apis.</a
+      >
+    </p>
+  </body>
+</html>

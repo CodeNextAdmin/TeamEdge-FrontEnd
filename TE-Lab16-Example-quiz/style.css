@@ -1,0 +1,137 @@
+/* CSS files add styling rules to your content */
+
+body {
+  color: #797e83;
+  font-size: 16px;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Lato", sans-serif;
+}
+
+main {
+  text-align: center;
+}
+
+.quiz-container {
+  display: inline-block;
+  margin-top: 20px;
+  width: 600px;
+  height: 600px;
+  background: #52bab3;
+  border-color: #008080;
+  border-style: solid;
+  border-radius: 6px;
+}
+
+.question-row {
+  color: #e4f4f2;
+}
+.answers-row {
+  text-align: center;
+}
+
+.answer-btn {
+  display: inline-block;
+  font-family: "Lato", sans-serif;
+  width: 90%;
+  height: 60px;
+  margin: 20px;
+  font-size: 20px;
+  color: #52bab3;
+  background: #fff;
+  border-style: solid;
+  border-width: 0.5px;
+  border-radius: 6px;
+}
+.answer-btn:hover {
+  background: #cd3f56;
+  outline: 0;
+  color: #fff;
+}
+
+.answer-btn:active {
+  outline: 0;
+  background: #cd3f56;
+  color: #fff;
+}
+
+#aQuestion {
+  color: #e4f4f2;
+  font-size: 24px;
+}
+#question-count {
+  color: #fff;
+}
+
+#results-popover {
+  background: #cd3f56;
+  position: absolute;
+  top: 300px;
+  left: 30%;
+  color: #fff;
+  width: 40%;
+  height: 160px;
+  visibility: hidden;
+
+  -webkit-box-shadow: 5px 6px 10px 5px rgba(0, 0, 0, 0.45);
+  box-shadow: 5px 6px 10px 5px rgba(0, 0, 0, 0.45);
+}
+
+#result {
+  font-size: 28px;
+}
+
+#restart {
+  height: 50px;
+  width: 50px;
+  margin-top: -40px;
+  background: #fff;
+  border-color: #cd3f56;
+  border-style: solid;
+  border-width: 2px;
+  color: #cd3f56;
+}
+
+#restart:hover {
+  border-color: #52bab3;
+  border-style: solid;
+  border-width: 2px;
+  color: #52bab3;
+}
+
+/* an easy prog bar, with different browsers in midn */
+progress {
+  /* style rules */
+  
+  background-color: #f3f3f3;
+  border: 0;
+  height: 5px;
+  border-radius: 9px;
+}
+progress::-webkit-progress-bar {
+  /* style rules */
+  -webkit-appearance: none;
+  appearance: none;
+  background: #fff;
+
+  width: 150px;
+  height: 5px;
+}
+progress::-webkit-progress-value {
+  /* style rules */
+
+  /* Reset the default appearance */
+  -webkit-appearance: none;
+  appearance: none;
+  background: #008080;
+
+  width: 150px;
+  height: 5px;
+}
+progress::-moz-progress-bar {
+  /* style rules */
+}

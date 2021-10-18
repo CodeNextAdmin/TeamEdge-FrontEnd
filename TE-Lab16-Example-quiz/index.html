@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Hello!</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400&family=Passion+One&display=swap"
+      rel="stylesheet"
+    />
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="title">
+        Tricky Quiz
+      </h1>
+    </header>
+
+    <main>
+      <div class="quiz-container">
+        <div class="question-row">
+          <p id="aQuestion">
+            What is the capital of Sacramento?
+          </p>
+        </div>
+        
+        <div class="answers-row">
+          
+          <button id="answer-1" onclick="submitGuess(this)" class="btn answer-btn"> 
+            Nevada
+          </button>
+          <button id="answer-2" onclick="submitGuess(this)"  class="btn answer-btn"> 
+            California
+          </button>
+          <button id="answer-3" onclick="submitGuess(this)"  class="btn answer-btn"> 
+            Texas
+          </button>
+          <button id="answer-4" onclick="submitGuess(this)"  class="btn answer-btn"> 
+            Ohio
+          </button>
+          
+        </div>
+        
+        <div class="question-count-row">
+          
+          <p id="question-count">
+            Question 1 out of 10
+          </p>
+          
+          <div class="prog-bar-row">
+            
+            <progress id="prog-bar" max="0" value="0"></progress>
+            
+          </div>
+        
+        </div>
+      </div>
+      
+      
+      <div id="results-popover">
+        <p id="result">
+          Your result is: 
+        </p>
+        <button id="restart" onclick="restart()">
+          Play Again
+        </button>
+        
+        
+      </div>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>

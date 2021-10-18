@@ -1,0 +1,87 @@
+/* CSS files add styling rules to your content */
+html {
+  background-color: #fcfcfc;
+  color: #222222;
+  font-size: 16px;
+}
+body {
+  max-width: 1000px;
+  margin: 0px auto;
+  padding: 10px;
+}
+
+header {
+  text-align: center;
+}
+
+p {
+  font-family: Tahoma, arial;
+  font-weight: normal;
+  color: #2aa391;
+}
+
+p.tagline {
+  font-style: italic;
+  font-size: 18px;
+}
+
+main {
+}
+.container {
+  display: inline-block;
+
+  margin: auto;
+  background: #e3c4d6;
+  width: 100%;
+  height: 600px;
+}
+
+.fortune-image {
+  width: 100%;
+  height: 600px;
+}
+
+h1 {
+  font-family: "Chelsea Market", cursive;
+  color: #a5518b;
+}
+.fortune-btn {
+  display: block;
+  color: #a5518b;
+  width: 100%;
+  height: 40px;
+  background: #fcfcfc;
+  text-align: center;
+  margin: 0px auto;
+  font-family: "Chelsea Market", cursive;
+  font-size: 120%;
+}
+
+.fortune-btn:hover {
+  background: #e3c4d6;
+}
+
+.fortune-btn:active {
+  background: #a5518b;
+  color: #fcfcfc;
+  outline:0;
+}
+ 
+
+.fortune-box {
+  display: block;
+  position: absolute;
+  width: 300px;
+  background: #a5518b;
+  height: 160px;
+  top: 65%;
+  left: 50%;
+  color: #e7e0de;
+  padding: 30px;
+  opacity:90%;
+}
+
+.fortune-txt {
+  font-family: 'Passion One', cursive;
+  font-size: 150%;
+}

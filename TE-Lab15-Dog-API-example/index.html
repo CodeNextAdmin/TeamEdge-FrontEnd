@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Doggies</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/style.css" />
+    <!-- import the webpage's stylesheet -->
+    <script src="/script.js" defer></script>
+    <!-- import the webpage's javascript file -->
+ 
+  </head>
+  <body>
+    <div id="top-banner">
+      <img
+        id="dog-logo"
+        onclick="location.reload()"
+        src="https://cdn.glitch.com/d20758e9-d228-434a-a5ea-cc1b077ebf6b%2F15592452451589131.png?1559244984343"
+      />
+    </div>
+
+    <div id="doggie-container">
+      <div id="heading">
+        This Doggie. <span class="orange">That Doggie.</span>
+      </div>
+      <h2>
+        Explore our library of doggie photos to find the right doggie for you!
+      </h2>
+      <p id="subheading">
+        Made with
+        <a href="https://dog.ceo/dog-api/documentation/">DogAPI</a> using
+        HTML/CSS and pure JavaScript. Check out the code on
+        <a href="https://glitch.com/~doggies">Glitch</a> and feel free to remix
+        it! Click on the big Yellow Button to reset
+      </p>
+      <div id="choices-container">
+        <div
+          class="choices-card card"
+          id="view-by-name"
+          onclick="displayByBreedNames()"
+        >
+          <img
+            class="dog-photo"
+            src="https://cdn.glitch.com/d20758e9-d228-434a-a5ea-cc1b077ebf6b%2Fdog-food.png?1559264961075"
+          />
+          <p>View By Breed Names</p>
+        </div>
+        <div
+          class="choices-card card"
+          id="view-by-photo"
+          onclick="displayByBreedPhotos()"
+        >
+          <img
+            class="dog-photo"
+            src="https://cdn.glitch.com/d20758e9-d228-434a-a5ea-cc1b077ebf6b%2Fdog.png?1559264961532"
+          />
+          <p>View By Breed Photos</p>
+        </div>
+        <div
+          class="choices-card card"
+          id="view-by-random"
+          onclick="displayByRandom()"
+        >
+          <img
+            class="dog-photo"
+            src="https://cdn.glitch.com/d20758e9-d228-434a-a5ea-cc1b077ebf6b%2Fsearch.png?1559264961321"
+          />
+          <p>Random Breed</p>
+        </div>
+      </div>
+      <div id="doggie-display"></div>
+    </div>
+  </body>
+</html>

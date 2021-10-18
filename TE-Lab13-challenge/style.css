@@ -1,0 +1,30 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 2em;
+  text-align:right;
+   
+}
+
+h1 {
+  font-style: italic;
+  color: #373fff;
+}
+
+.login-container{
+  
+  position:absolute;
+  margin-left:35%; 
+  width:auto;
+  height:auto;
+  background:PaleGoldenRod;
+  padding:12px;
+}
+
+input{
+  
+  
+}
+
+ 

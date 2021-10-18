@@ -1,0 +1,49 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: Tahoma, arial, sans-serif;
+  margin: 2em;
+  color:#FFCCFF;
+  background:grey;
+  text-align:center;
+}
+
+h1 {
+  font-style: italic;
+  color: #373fff;
+}
+
+.row{
+  
+  /* rbga(red, green, blue, transparency), color values range 0-255 */
+  background: rgba(255, 30, 121, .11);     
+  padding:20px;
+  margin-top:30px;
+   
+}
+
+#challenge1{
+  display:inline-block;
+  vertical-align:middle;
+  width:100px;
+  height:100px;
+  background:#FFFF00;
+  margin:20px;
+}
+
+#challenge2{
+  display:inline-block;
+  width:400px;
+  height: 120px;
+  background:#fff;
+  text-align:center;
+  color:#333333;
+  padding:30px;
+}
+
+#random-joke{
+  
+  margin-top: 30px;
+}
+
+

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>CSS grids</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <!---------------- Grid 1 ------------------>
+    <h2>
+      Grid 1
+    </h2>
+    <h3>
+      grid-template-columns: auto auto auto;
+    </h3>
+    <p>
+      Three columns, auto-resizing.
+    </p>
+    <div class="grid-container-1">
+      <div class="grid-item">🐠</div>
+      <div class="grid-item">🦀</div>
+      <div class="grid-item">🦈</div>
+      <div class="grid-item">🦑</div>
+      <div class="grid-item">🦐</div>
+      <div class="grid-item">🐡</div>
+      <div class="grid-item">🐋</div>
+      <div class="grid-item">🐟</div>
+      <div class="grid-item">🐙</div>
+    </div>
+    <br />
+
+    <!---------------- Grid 2 ------------------>
+    <h2>
+      Grid 2
+    </h2>
+
+    <h3>
+      grid-template-rows: 3fr 1fr 1fr 2fr;
+    </h3>
+    <p>
+      Rows (or columns) can have weighted dimensions, by fraction amout (fr).
+      Also auto-resizing.
+    </p>
+
+    <div class="grid-container-2">
+      <div class="grid-item">🌶</div>
+      <div class="grid-item">🌽</div>
+      <div class="grid-item">🥑</div>
+      <div class="grid-item">🥕</div>
+    </div>
+    <br />
+    <!---------------- Grid 3 ------------------>
+    <h2>
+      Grid 3
+    </h2>
+    <h3>
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    </h3>
+    <h3>
+      grid-gap: 12px;
+    </h3>
+
+    <p>
+      A responsive auto-fill layout with a size limit.
+    </p>
+    <div class="grid-container-3">
+      <div>💐</div>
+      <div>🌲</div>
+      <div>🌿</div>
+      <div>☘️</div>
+      <div>🌵</div>
+      <div>🌷</div>
+      <div>🍄</div>
+      <div>🍁</div>
+      <div>🌴</div>
+      <div>🌻</div>
+      <div>🌺</div>
+      <div>🌳</div>
+    </div>
+    <br />
+
+    <!---------------- Grid 4 ------------------>
+    <h2>
+      Grid 4
+    </h2>
+    <h3>
+      grid-column-start: 1; grid-column-end: 3; grid-row-start: 1; grid-row-end:
+      2;
+    </h3>
+    <p>
+      Set the starting and ending point for columns and rows
+    </p>
+    <div class="grid-container-4">
+      <div class="grid-4-item">🥁</div>
+      <!-- apply this class to another div instead -->
+      <div>🎻</div>
+      <div>🎺</div>
+      <div>🎸</div>
+      <div>🎹</div>
+      <div>🎷</div>
+      <div>🎤</div>
+      <div>🎼</div>
+    </div>
+
+    <br />
+    <!---------------- Grid 5 ------------------>
+
+    <h2>
+      Grid 5
+    </h2>
+
+    <h3>
+      grid-template-columns: 120px 240px 120px 240px;
+    </h3>
+
+    <p>
+      Set fixed dimensions for each column.
+    </p>
+
+    <div class="grid-container-5">
+      <div>🥁</div>
+      <!-- apply this class to another div instead -->
+      <div>🎻</div>
+      <div>🎺</div>
+      <div>🎸</div>
+      <div>🎹</div>
+      <div>🎷</div>
+      <div>🎤</div>
+      <div>🎼</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Hello!</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <h1>API Data Playground</h1>
+
+    <div class="container">
+      <p>
+        <button onclick="getDogData()">
+          Get Random Dog
+        </button>
+      </p>
+
+      <br />
+      <img id="display-dog-img" src="https://lunawood.com/wp-content/uploads/2018/02/placeholder-image.png" />
+    </div>
+    <hr />
+    <div class="container">
+      <p>
+        <input
+          type="text"
+          id="pokemon-name"
+          placeholder="enter pokemon name"
+          value=""
+        />
+        <button onclick="getPokeData()">
+          Get Pokemon Data
+        </button>
+      </p>
+      <h3 id="display-poke-data">
+        data
+      </h3>
+
+      <br />
+      <img
+        id="display-poke-img"
+        width="300"
+        height="300"
+        src="https://lunawood.com/wp-content/uploads/2018/02/placeholder-image.png"
+        
+      />
+      <hr/>
+      
+      <h1>
+        Your Turn:
+      </h1>
+  <!-- Build your own API experiment here 
+
+   for example: 
+    1. show more pokement stats
+    2. build a text box-based search for a dog, like the pokemon example
+    3. Whatever you want!
+
+-->    
+      
+    </div>
+  </body>
+</html>

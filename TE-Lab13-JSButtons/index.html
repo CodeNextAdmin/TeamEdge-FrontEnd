@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Hello!</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <h2>
+      Demo of JavaScript-powered Button Elements
+    </h2>
+
+    <hr />
+
+    <!--a button element -->
+
+    <div class="button-row">
+      <button>Button title</button>
+      <span class="button-info"
+        >This button does nothing. It has no style.</span
+      >
+    </div>
+
+    <!--a button element with a function  -->
+    <div class="button-row">
+      <button onclick="showAlert()">Click Me</button>
+      <span class="button-info"
+        >Runs the function inside the script tags found at the bottom of this
+        html file.
+      </span>
+    </div>
+
+    <div class="button-row">
+      <button onclick="changeColor()">Change color</button>
+      <span class="button-info"
+        >This button uses the selector property to change the body background.
+      </span>
+    </div>
+
+    <div class="button-row">
+      <button onclick="appendEmoji()">Append</button>
+      <span id="emoji" class="button-info">Append an emoji: </span>
+    </div>
+
+    <div class="button-row">
+      <button onclick="changeAll()">Change All</button>
+      <span class="button-info"
+        >uses querySelectAll() to change all matching elements.
+      </span>
+    </div>
+
+    <hr />
+
+    <div class="button-row">
+      <button class="styled btn-1">Button</button>
+      <span class="button-info"> Partially styled in CSS </span>
+    </div>
+
+    <a href="#" class="btn-hollow" onclick="alert('hello')">
+      <span class="btn-title">Click me!</span>
+    </a>
+    <span class="button-info">
+      Buttons can be made from other elements too. Hover and click this fancy
+      anchor tag</span
+    >
+
+    <script>
+      let colors = [
+        "#2478af",
+        "#21242f",
+        "#86868c",
+        "#d5456d",
+        "#0f217a",
+        "#b78665"
+      ];
+
+      function showAlert() {
+        alert("I'm touched!!! 😊 ");
+      }
+
+      function changeColor() {
+        const randomColor = colors[Math.floor(Math.random() * colors.length)];
+
+        document.querySelector("body").style.backgroundColor = randomColor;
+      }
+
+      function appendEmoji() {
+        let text = document.querySelector("#emoji").innerHTML;
+        text += " 🤡 ";
+        document.querySelector("#emoji").innerHTML = text;
+      }
+
+      function changeAll() {
+        const randomColor1 = colors[Math.floor(Math.random() * colors.length)];
+        const randomColor2 = colors[Math.floor(Math.random() * colors.length)];
+        var allMatches = []; /* querySelectorAll returns an array */
+
+        allMatches = document.querySelectorAll("button");
+
+        for (let i = 0; i < allMatches.length; i++) {
+          allMatches[i].style.backgroundColor = randomColor1;
+          allMatches[i].style.color = randomColor2;
+        }
+      }
+    </script>
+  </body>
+</html>

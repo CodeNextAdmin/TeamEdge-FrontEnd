@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Passion+One&display=swap" rel="stylesheet">
+    <title>TE Lab 13</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <span class="name">Fortune Teller </span>
+        <span class="hurt">🔮</span>
+      </h1>
+
+      <p class="tagline">Ask me a question and press the button.</p>
+    </header>
+    <main>
+      <div class="container">
+        <img
+          class="fortune-image"
+          src="https://cdn.pixabay.com/photo/2017/03/10/23/13/oracle-girl-2133976_1280.jpg"
+        />
+        <div class="fortune-box">
+          <button onclick="showFortune()" class="fortune-btn">
+            What is in store?
+          </button>
+          <div>
+            <h3 class="fortune-txt"> Fortune goes here!</h3>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

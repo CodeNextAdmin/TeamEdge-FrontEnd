@@ -1,0 +1,103 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: Tahoma, arial, sans-serif;
+  margin: 2em;
+  background: #d5456d;
+}
+
+
+h2{
+  color:#edf2f3;
+  
+}
+
+hr{
+  
+  margin-left:-20px;
+  margin-right:-20px;
+  margin-top:20px;
+}
+
+.button-info{
+  
+  margin:20px;
+  color: #edf2f3;
+}
+
+.button-row{
+  
+  margin-top:40px;
+}
+
+.btn-1{
+  
+  width:170px;
+  height:70px;
+  color:#f3efed;
+  background:#2478af;
+  font-size: 120%;
+  font-style:  oblique;
+  box-shadow: 2px 2px 4px #86868c;
+  border-color:#86868c;
+  border-radius:15px;
+  
+}
+
+.btn-2{
+  width:170px;
+  height:70px;
+  color:#f3efed;
+  background:#0f217a;
+  font-size: 120%;
+  font-style:  oblique;
+  box-shadow: 2px 2px 4px #86868c;
+  border-color:#86868c;
+  border-radius:15px;
+  
+}
+
+/* remove the focus frame on styled buttons */ 
+.styled:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-hollow{
+  text-decoration:none;
+  display:inline-block;
+  background:#fff;
+  color:#0f217a;
+  margin-top:40px;
+  width:120px;
+  height:60px;
+  text-align:center;
+  border-style:solid;
+  border-color: #0f217a;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  
+}
+.btn-hollow:hover{ 
+  
+  color:#fff;
+  border-color: #fff;
+  background:#0f217a;
+  
+}
+
+.btn-hollow:active{
+  color:#2478af;
+  border-color: #2478af;
+  background:#0f217a;
+  box-shadow: 2px 2px 4px #86868c;
+}
+
+
+.btn-title{
+   
+  display:inline-block;
+  margin-top:20px;
+}

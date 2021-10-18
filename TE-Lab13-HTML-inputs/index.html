@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Hello!</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <h1>
+      Input examples
+    </h1>
+
+    <div class="example-row">
+      <!-- a text and password input example w/ labels-->
+      <label for="username">Username:</label>
+      <br/>
+      <input type="text"  name="username" placeholder="Enter your username"/><br />
+      <label for="pwd">Password:</label><br />
+      <input type="password" id="pwd" name="pwd" /><br />
+      <label for="color">Color:</label><br />
+      <input type="color" name="color" value="#ca12f2" /><br />
+      <label for="file">File picker:</label><br />
+      <input type="file" name="file" />
+    </div>
+
+    <div class="example-row">
+      <!-- a text and password input example w/ labels-->
+      <label for="username">email</label>
+      <br />
+      <input type="email" id="email" name="email" /><br />
+      <label for="date">Date:</label><br />
+      <input type="date" name="date" />
+    </div>
+    
+      <div class="example-row">
+      <!-- a slider example -->
+
+        <br />
+        <label for="slider">Range slider:</label><br />
+         <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+      </div>
+
+    <div class="example-row">
+      <form action="/confirmation.html" onsubmit="saveData()">
+        My favourite color is:
+        <input type="text" id="favorite-color" value="" />
+        My pet name is:
+        <input type="text" id="pet-name" value="" />
+        <br />
+        <p class="choice-label">My favorite pizza is:</p>
+        <input
+          class="radio-btn"
+          type="radio"
+          name="pizza"
+          checked
+          value="cheese"
+        />
+        <p class="choice-label">Cheese</p>
+        <input class="radio-btn" type="radio" name="pizza" value="pepperoni" />
+        <p class="choice-label">Pepperoni</p>
+        <input class="radio-btn" type="radio" name="pizza" value="veggie" />
+        <p class="choice-label">Veggies</p>
+        <br />
+        <input type="submit" value="Save" />
+      </form>
+    </div>
+
+    <script>
+      window.onload = function() {
+        //localStorage.setItem("storageName",getInput);
+         
+        let pizzaChoices = document.querySelectorAll(".radio-btn");
+        
+        for (var pizza of pizzaChoices) {
+          console.log(pizza.value);
+        }
+      };
+
+      function saveData() {
+        let fColor = document.querySelector("#favorite-color").value;
+        let petName = document.querySelector("#pet-name").value;
+        
+        
+         
+        localStorage.setItem("favColor", fColor);
+        localStorage.setItem("petName", petName);
+
+        let pizzaChoices = document.querySelectorAll('input[name="pizza"]');
+
+        let chosenPizza = "";
+
+        for (const p of pizzaChoices) {
+          if (p.checked) {
+            chosenPizza = p.value;
+            break;
+          }
+        }
+       
+
+        localStorage.setItem("pizza", chosenPizza);
+      }
+    </script>
+  </body>
+</html>

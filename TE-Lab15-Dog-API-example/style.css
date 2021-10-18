@@ -1,0 +1,136 @@
+body {
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  margin: 0px;
+}
+
+h2 {
+  margin-top: 5px;
+}
+
+a, .orange {
+  color: #FFA600; 
+}
+
+
+
+/* Header */
+#top-banner {
+  background-color: #00ab58;
+  background-image: url("https://cdn.glitch.com/d20758e9-d228-434a-a5ea-cc1b077ebf6b%2Fgplay.png?1559244619628");
+  width: 100%;
+  height: 28vh;
+/*   position: relative; */
+}
+
+#dog-logo {
+  float: left;
+  margin-left: 25px;
+  margin-top: 25px;
+  margin-right: 10px;
+  width: 375px;
+}
+
+#heading {
+  font-weight: bold;
+  font-size: 50px;
+  margin-top: -13px;
+  text-shadow: 2px 2px 2.5px black;
+}
+
+#subheading {
+  margin-top: -10px;
+  font-size: 18px;
+}
+
+
+
+/* Outer and Inner Containers */
+#doggie-container {
+  margin-top: -20px;
+  padding-top: 20px;
+  background-color: #ffffff;
+  background-image: url("https://cdn.glitch.com/d20758e9-d228-434a-a5ea-cc1b077ebf6b%2Fclimpek.png?1559252937548");
+  height: 100vh;
+}
+
+#doggie-display {
+  margin-top: 45px;
+  padding: 0px 65px;
+}
+
+
+
+/* Cards that display viewing options */
+#choices-container {
+  margin-top: 60px;
+  padding: 0px 65px;
+  text-align: center;
+}
+
+.choices-card {
+  background-color: rgba(255, 166, 0, 0.02);
+  padding: 15px 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+  display: inline-block;
+  vertical-align: top;
+  width: 275px;
+  font-weight: bold;
+  font-size: 25px;
+  margin-right: 35px;
+  box-shadow: 4px 4px 8px grey;
+  text-shadow: 1px 1px .5px #FFA600;
+}
+
+
+
+/* Viewing Option: Breed Names */
+.card-name {
+  background-color: rgba(255, 166, 0, 0.02);
+  padding: 15px;
+  border: 2px solid black;
+  border-radius: 10px;
+  display: inline-block;
+  margin: 8px;
+  box-shadow: 4px 4px 8px grey;
+}
+
+
+
+/* Viewing Option: Breed Photos */
+.card-photo {
+  background-color: rgba(255, 166, 0, 0.02);
+  padding: 15px;
+  border: 2px solid black;
+  border-radius: 10px;
+  display: inline-block;
+  vertical-align: top;
+  width: 15vw;
+  margin: 10px 7px;
+  text-align: center;
+  box-shadow: 4px 4px 8px grey;
+}
+
+
+
+/* Applies across website */
+.dogName {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.dog-photo {
+  padding-top: 10px;
+  max-width: 90%;
+  height:160px;
+  width:auto;
+  /*max-height: 250px;*/
+  display: inline-block;
+}
+
+.card:hover {
+  background-color: rgba(255, 166, 0, 0.1);
+}
+
+

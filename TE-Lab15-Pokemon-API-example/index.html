@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pokemon Battle</title>
+		<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="/style.css">
+	</head>
+	<body>
+		<img id="arena" src="https://cdn.glitch.com/77e20f13-53d8-493e-9422-a8cb13f6c459%2Fstadium.jpg">
+		<header>
+			<h1><span class="red">P</span>O<span class="red">K</span>É<span class="red">M</span>O<span class="red">N</span> B<span class="red">A</span>T<span class="red">T</span>L<span class="red">E</span></h1>
+		</header>
+
+		<main>
+			<div id="welcome">
+				<button class="poke-btn" id="enter"  onclick="enterGame()">Enter the Arena</button>
+			</div>
+			<div id="start">
+				<div class="cards">
+					<div id="first" class="card">
+						<button class="poke-btn" id="getPoke1" pokemon="none">Get Pokemon!</button>
+					</div>
+					<div id="pokeball">
+						<div id="center"  onclick="battle()"><img src="https://cdn.glitch.com/77e20f13-53d8-493e-9422-a8cb13f6c459%2Fpokeball.png"></div>
+					</div>
+					<div id="second" class="card">
+						<button class="poke-btn" id="getPoke2" pokemon="none">Get Pokemon!</button>
+					</div>
+					<div id="result">
+						<button class="poke-btn" id="play-again">Play Again</button>
+					</div>
+				</div>
+			</div>
+		</main>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+		<script src="/script.js"></script>
+	</body>
+</html>

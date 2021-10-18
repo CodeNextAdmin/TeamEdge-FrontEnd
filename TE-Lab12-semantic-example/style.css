@@ -1,0 +1,107 @@
+/* CSS files add styling rules to your content */
+
+body {
+	font-family: arial, sans-serif;
+  font-size:18px;
+	background: #fffefe;
+	letter-spacing: 1px;
+}
+
+h1, h3 {
+	display: inline-block;
+	color: #a26742;
+  text-align: center;
+  margin:10px;
+}
+
+
+header {
+	margin-left: -10px;
+	margin-right: -10px;
+	padding-right: 50px;
+}
+
+
+.logo {
+	font-size: 60px;
+	margin-left: 30px;
+	margin-right: 20px;
+  padding-top: 20px;
+}
+
+nav {
+	display: inline;
+	right: 250px;
+	padding-top: 40px;
+	float: right;
+}
+
+/* this applies to the anchors that are children of the nav element */
+a {
+	display: inline-block;
+	margin-right: 25px;
+  margin-left: 25px;
+	color: #b48456;
+	text-decoration: none;
+	font-weight: bold;
+}
+/* :hover only applies when a user hovers over a link */
+nav > a:hover {
+	color: #b99d2e;
+}
+
+main {
+	text-align: center;
+}
+
+section{
+	width: 80%;
+	margin: auto;
+	padding: 30px 10px 30px 10px;
+}
+
+#hero-img {
+  margin-right: 50%;
+  height: 400px;
+}
+
+img{
+  border-radius:5%;
+}
+
+#hero-text {
+  width: 40%;
+  height: 400px;
+  float: right;
+}
+
+#hero h1{
+  display:block;
+	color: #68d5c8;
+	float: left;
+	font-size: 5em;
+	margin-top:100px;
+  width:100%;
+}
+#hero h3{
+  width:100%;
+  color: #68d5c8;
+  font-weight: normal;
+}
+a>img{
+  height:150px;
+  margin: 15px;
+}
+
+footer {
+	background: #d8b688;
+	text-align: center;
+  height:100px;
+  padding:10px;
+  margin-top:10px;
+}
+
+footer h1{
+  color:white;
+  display:block;
+}

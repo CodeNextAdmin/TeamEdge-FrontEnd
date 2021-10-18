@@ -1,0 +1,37 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: Helvetica, arial, sans-serif;
+  margin: 2em;
+}
+
+h1 {
+  color: tomato;
+}
+label{
+  
+  display:inline;
+  margin:10px;
+   
+}
+
+.example-row {
+  background: seashell;
+  width: 100%;
+  padding: 20px;
+  
+  margin-top:40px;
+}
+input{
+  
+  display:inline ;;
+  margin:10px;
+   
+}
+
+.choice-label{
+   
+  
+  display:inline-block ;
+  margin-top:5px;
+}
